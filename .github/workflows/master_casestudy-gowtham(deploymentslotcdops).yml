@@ -38,7 +38,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'DeploymentSlotCDOps'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -52,6 +52,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'casestudy-gowtham'
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B8D3AF6328114222A885EADD4FCDFDF9 }}
+          slot-name: 'DeploymentSlotCDOps'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_522C84BB9A7A41659960951C67BB601F }}
           package: .
