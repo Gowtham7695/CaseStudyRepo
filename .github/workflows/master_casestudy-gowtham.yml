@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'casestudy-gowtham'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D079874C5E944C5BB6BA4D0C5A3B3EEF }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B8D3AF6328114222A885EADD4FCDFDF9 }}
           package: .
